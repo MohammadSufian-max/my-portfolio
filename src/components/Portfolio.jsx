@@ -1,6 +1,9 @@
 import React from "react";
 import "./Portfolio.css";
-
+import MyPhoto from "../assets/MyPhoto.jpg";
+import school from "../assets/school.avif";
+import education from "../assets/education.jpg";
+import resume from "../assets/resume.pdf";
 
 export default function Portfolio() {
   return (
@@ -9,7 +12,7 @@ export default function Portfolio() {
 
       <section className="portfolio" id="home">
         <div className="image">
-          <img src="public/MyPhoto.jpg" alt="" />
+          <img src={MyPhoto} alt="My Photo" />
         </div>
         <div className="container">
           <h1 className="title">
@@ -28,7 +31,7 @@ export default function Portfolio() {
               View My Work
             </a>
             <a
-              href="/resume.pdf" 
+              href={resume}
               className="btn btn-outline"
               target="_blank"
               rel="noopener noreferrer"
@@ -36,7 +39,7 @@ export default function Portfolio() {
               Download Resume
             </a>
           </div>
-            {/* Social Media Links */}
+          {/* Social Media Links */}
           <div className="social-links">
             <a
               href="https://github.com/MohammadSufian-max"
@@ -60,68 +63,71 @@ export default function Portfolio() {
               <i className="fab fa-instagram"></i>
             </a>
           </div>
-
         </div>
       </section>
 
       {/* -------- Skills Section -------- */}
       <section className="skills" id="skills">
-  <div className="skills-container">
-    {/* Section Title */}
-    <h2 className="section-title">
-      ⚡ <span>My Skills</span>
-    </h2>
-    <p className="section-subtitle">
-      A blend of technical expertise and problem-solving abilities.
-    </p>
+        <div className="skills-container">
+          {/* Section Title */}
+          <h2 className="section-title">
+            ⚡ <span>My Skills</span>
+          </h2>
+          <p className="section-subtitle">
+            A blend of technical expertise and problem-solving abilities.
+          </p>
 
-    {/* Skills Grid */}
-    <div className="skills-grid">
-      <div className="skill-card">
-        <h3>💻 JavaScript (ES6+)</h3>
-        <p>
-          Experienced in modern JavaScript features, DOM manipulation, and async programming.
-        </p>
-      </div>
+          {/* Skills Grid */}
+          <div className="skills-grid">
+            <div className="skill-card">
+              <h3>💻 JavaScript (ES6+)</h3>
+              <p>
+                Experienced in modern JavaScript features, DOM manipulation, and
+                async programming.
+              </p>
+            </div>
 
-      <div className="skill-card">
-        <h3>⚛️ React.js & Node.js</h3>
-        <p>
-          Building fullstack apps with reusable components and server-side logic.
-        </p>
-      </div>
+            <div className="skill-card">
+              <h3>⚛️ React.js & Node.js</h3>
+              <p>
+                Building fullstack apps with reusable components and server-side
+                logic.
+              </p>
+            </div>
 
-      <div className="skill-card">
-        <h3>🚀 Express.js & MongoDB</h3>
-        <p>
-          Designing REST APIs and managing databases with Mongoose & NoSQL queries.
-        </p>
-      </div>
+            <div className="skill-card">
+              <h3>🚀 Express.js & MongoDB</h3>
+              <p>
+                Designing REST APIs and managing databases with Mongoose & NoSQL
+                queries.
+              </p>
+            </div>
 
-      <div className="skill-card">
-        <h3>🎨 HTML5, CSS3</h3>
-        <p>
-          Creating responsive layouts, animations, and pixel-perfect UIs.
-        </p>
-      </div>
+            <div className="skill-card">
+              <h3>🎨 HTML5, CSS3</h3>
+              <p>
+                Creating responsive layouts, animations, and pixel-perfect UIs.
+              </p>
+            </div>
 
-      <div className="skill-card">
-        <h3>🌍 Git, GitHub, Deployment</h3>
-        <p>
-          Version control, collaboration, and deploying apps to cloud platforms.
-        </p>
-      </div>
+            <div className="skill-card">
+              <h3>🌍 Git, GitHub, Deployment</h3>
+              <p>
+                Version control, collaboration, and deploying apps to cloud
+                platforms.
+              </p>
+            </div>
 
-      <div className="skill-card">
-        <h3>🧠 C++ Problem Solving</h3>
-        <p>
-          Efficient at solving complex problems using Data Structures & Algorithms with C++ for optimized solutions.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
+            <div className="skill-card">
+              <h3>🧠 C++ Problem Solving</h3>
+              <p>
+                Efficient at solving complex problems using Data Structures &
+                Algorithms with C++ for optimized solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* -------- Projects Section -------- */}
       <section className="projects" id="projects">
@@ -129,16 +135,18 @@ export default function Portfolio() {
           <h2 className="Project-title">🚀 My Projects</h2>
           <div className="project-grid">
             <div className="project-card">
-              <h3>🌐 Portfolio Website</h3>
-              <p>
-                A responsive personal portfolio built with{" "}
-                <strong>React + Vite</strong>, showcasing my skills and
-                projects.
-              </p>
-              <a href="#" className="project-link">
-                🔗 View Project
-              </a>
-            </div>
+  <h3>🤖 Obstacle Avoidance Robot</h3>
+  <p>
+    An autonomous robot built with <strong>Arduino</strong> that detects and 
+    avoids obstacles using <strong>ultrasonic sensors</strong> and 
+    <strong> motor driver control</strong>. Focused on safety-first algorithm 
+    design and efficient movement logic.
+  </p>
+  <a href="#" className="project-link">
+    🔗 View Project
+  </a>
+</div>
+
 
             <div className="project-card">
               <h3>✅ Task Manager App</h3>
@@ -153,104 +161,121 @@ export default function Portfolio() {
             </div>
 
             <div className="project-card">
-              <h3>🛒 E-commerce Store</h3>
-              <p>
-                An online shopping platform with{" "}
-                <strong>cart, payment integration</strong>, and user-friendly UI
-                for smooth checkout.
-              </p>
-              <a href="#" className="project-link">
-                🔗 View Project
-              </a>
-            </div>
+  <h3>🎵 Music Recommendation System</h3>
+  <p>
+    A hybrid recommender using <strong>content-based</strong> and 
+    <strong> collaborative filtering</strong>, deployed as an interactive 
+    <strong> Streamlit web app</strong> for real-time music suggestions.
+  </p>
+  <a href="https://music-recommendation-system-849tm3bkhpg4ahvkdmcj2s.streamlit.app/" className="project-link">
+    🔗 View Project
+  </a>
+</div>
+
           </div>
         </div>
       </section>
       {/* -------- Education Section -------- */}
-     
-<section className="education" id="education">
-  <h2 className="section-title">
-    🎓 <span className="highlight">My Education</span>
-  </h2>
-  <p className="section-subtitle">
-    Education Is Not The Learning Of Facts, But The Training Of The Mind To Think.
-  </p>
 
-  <div className="education-container">
-    {/* College */}
-    <div className="education-card">
-      <img src="public/education.jpg" alt="PSIT" className="edu-img" />
-      <div className="edu-content">
-        <h3>Bachelor Of Engineering In CS-AI&DS</h3>
-        <p>Pranveer Singh Institute Of Technology | PSIT</p>
-        <span className="edu-duration">2022-2026 | <b>Pursuing</b></span>
-      </div>
-    </div>
+      <section className="education" id="education">
+        <h2 className="section-title">
+          🎓 <span className="highlight">My Education</span>
+        </h2>
+        <p className="section-subtitle">
+          Education Is Not The Learning Of Facts, But The Training Of The Mind
+          To Think.
+        </p>
 
-    {/* School */}
-    <div className="education-card">
-      <img src="public/school.avif" alt="School" className="edu-img" />
-      <div className="edu-content">
-        <h3>Intermediate & High School | Computer Science</h3>
-        <p>Mount Carmel Intermediate College </p>
-        <span className="edu-duration">2020-2022 | <b>Completed</b></span>
-      </div>
-    </div>
-  </div>
-</section>
-{/*Contact me*/ }
-<section className="contact" id="contact">
-  <div className="contact-container">
-    <h2 className="section-title">📬 Contact Me</h2>
-    <p className="contact-subtitle">
-      Feel free to reach out by filling the form below 👇
-    </p>
+        <div className="education-container">
+          {/* College */}
+          <div className="education-card">
+            <img src={education} alt="PSIT" className="edu-img" />
+            <div className="edu-content">
+              <h3>Bachelor Of Engineering In CS-AI&DS</h3>
+              <p>Pranveer Singh Institute Of Technology | PSIT</p>
+              <span className="edu-duration">
+                2022-2026 | <b>Pursuing</b>
+              </span>
+            </div>
+          </div>
 
-    <form 
-      action="https://formspree.io/f/yourFormID" 
-      method="POST" 
-      className="contact-form"
-    >
-      <input 
-        type="text" 
-        name="name" 
-        placeholder="Your Name" 
-        required 
-      />
-      <input 
-        type="email" 
-        name="email" 
-        placeholder="Your Email" 
-        required 
-      />
-      <textarea 
-        name="message" 
-        rows="5" 
-        placeholder="Your Message" 
-        required
-      ></textarea>
-      <button type="submit" className="btn">
-        Send Message
-      </button>
-    </form>
-  </div>
-</section>
+          {/* School */}
+          <div className="education-card">
+            <img src={school} alt="School" className="edu-img" />
+            <div className="edu-content">
+              <h3>Intermediate & High School | Computer Science</h3>
+              <p>Mount Carmel Intermediate College </p>
+              <span className="edu-duration">
+                2020-2022 | <b>Completed</b>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*Contact me*/}
+      <section className="contact" id="contact">
+        <div className="contact-container">
+          <h2 className="section-title">📬 Contact Me</h2>
+          <p className="contact-subtitle">
+            Feel free to reach out by filling the form below 👇
+          </p>
 
-{/*Footer section*/ }
-<footer className="footer">
-  <div className="footer-container">
-    <p>© 2025 Mohammad Sufiyan | All Rights Reserved</p>
-    <p>Made with ❤️ by Mohammad Sufiyan</p>
-     
-    <div className="footer-socials">
-      <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">🐙</a>
-      <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">🔗</a>
-      <a href="https://instagram.com/yourinstagram" target="_blank" rel="noopener noreferrer">📷</a>
-    </div>
-  </div>
-</footer>
+          <form
+            action="https://formspree.io/f/mjkonlab"
+            method="POST"
+            className="contact-form"
+          >
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit" className="btn">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
 
+      {/*Footer section*/}
+      <footer className="footer">
+        <div className="footer-container">
+          <p>© 2025 Mohammad Sufiyan | All Rights Reserved</p>
+          <p>Made with ❤️ by Mohammad Sufiyan</p>
 
+          <div className="footer-socials">
+            <a
+              href="https://github.com/yourgithub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🐙
+            </a>
+            <a
+              href="https://linkedin.com/in/yourlinkedin"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🔗
+            </a>
+            <a
+              href="https://instagram.com/yourinstagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              📷
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
